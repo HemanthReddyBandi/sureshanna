@@ -1,0 +1,98 @@
+/* intro section styling */
+.intro-section {
+  padding: 60px 0;
+  background-color: black;
+  color: white;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+.intro-section::after {
+  position: absolute;
+  content: "";
+  background: url(./img/hr_logo2-removebg-preview.png) no-repeat center;
+  right: 0;
+  top: -18%;
+  bottom: 0;
+  margin: auto;
+  width: 366px;
+  z-index: -1;
+  scale: 0.55;
+}
+.social-info li,
+.contact-info li {
+  display: inline-block;
+  padding: 0 15px;
+  transition: all 0.2s ease-in;
+}
+.contact-info li {
+  font-size: 22px;
+}
+.social-info li i,
+.contact-info li i {
+  padding-right: 5px;
+}
+
+.social-info li:first-child a:hover {
+  color: rgb(202, 59, 34);
+}
+.social-info li:nth-child(2) a:hover {
+  color: rgb(25, 157, 213);
+}
+.social-info li:nth-child(3) a:hover {
+  color: rgb(230, 7, 178);
+}
+
+.contact-info li:first-child a:hover {
+  color: rgb(202, 59, 34);
+}
+.contact-info li:nth-child(2) a:hover {
+  color: rgb(25, 157, 213);
+}
+.contact-info li:nth-child(3) a:hover {
+  color: rgb(230, 7, 178);
+}
+.menu-items {
+  padding-top: 25px;
+}
+.menu-items li {
+  margin: 0 2px 0;
+}
+.menu-items li a {
+  transition: all 0.2s ease-in;
+}
+.menu-items li:hover a {
+  color: #000;
+}
+
+/* responsiveness for tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .intro-section {
+    padding: 40px 0;
+  }
+}
+
+/* responsiveness for mobile */
+@media (max-width: 767px) {
+  .social-info li {
+    margin-bottom: 10px;
+  }
+  .social-info i {
+    display: block;
+    font-size: 19px;
+  }
+  .contact-info li {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .button {
+    display: block;
+  }
+  .intro-section::after {
+    right: auto;
+    left: 11%;
+  }
+}
+
+/* end of intro section styling */
